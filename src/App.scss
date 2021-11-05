@@ -15,4 +15,22 @@
         color:#111;
         font-family: 'Poppins', sans-serif;
     }
+    .btn {
+        font-size: 1em;
+        color: white;
+        background: #ff0157;
+        display: inline-block;
+        padding: 10px 30px;
+        margin-top: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+        transition: 0.5s;
+      }
+      .btn:hover {
+        padding: 10px 34px;
+        letter-spacing: 3px;
+        background-color: white;
+        color: #ff0157;
+      }
 }

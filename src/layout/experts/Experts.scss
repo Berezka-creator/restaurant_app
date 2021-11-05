@@ -1,4 +1,5 @@
-.menu{
+.experts {
+    padding: 100px;
     .title{
         width: 100%;
         display: flex;
@@ -6,53 +7,42 @@
         justify-content: center;
         align-items: center;
 
-        h2{
-
-        }
     }
 
     .content {
         display: flex;
         justify-content: center;
-        flex-direction: row-reverse;
         flex-wrap: wrap;
+        flex-direction: row;
         margin-top: 40px;
 
-        .menuItem{
-            width: 340px;
-            margin: 40px;
-            border: 15px solid #fff;
-            box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+        .expertItem{
+            width: 250px;
+            margin: 15px;
 
             .imgBx{
                 position: relative;
                 width: 100%;
                 height: 300px;
-                
+
                 img{
-                    position:absolute;
+                    position: absolute;
                     top:0;
-                    left: 0;
+                    left:0;
                     width: 100%;
                     height: 100%;
-                    object-fit:cover;
+                    object-fit: cover;
                 }
-
-
-
 
             }
 
-            .menuText {
+            .expertText{
                 padding: 15px 0 5px;
 
                 h3{
-                   font-weight:400; 
-                   color: #111;
+                    font-weight: 300;
                 }
             }
-
         }
-
     }
 }

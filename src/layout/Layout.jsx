@@ -3,9 +3,10 @@ import "./Layout.css";
 import AboutSection from './about/About'
 import BannerSection from './banner/Banner'
 import MenuSection from './menu/Menu'
+import ExpertsSection from './experts/Experts'
 import TestimonialsSection from './testimonials/Testimonials'
 import ContactSection from './contact/Contact'
-import PizzaImg from '../images/img1.jpg'
+
 
 export default function Layout() {
     return (
@@ -22,23 +23,12 @@ export default function Layout() {
                 </ul>
 
             </div>
-           
                 <BannerSection />
                 <AboutSection />
-
-              
-        
-
-           
-            <section className="menu">
-                Menu
-            </section>
-            <section className="testimonials">
-                Testimonial
-            </section>
-            <section className="contact">Contact</section>
-
-           
+                <MenuSection />
+                <ExpertsSection />
+            
+               
         </div>
     )
 }
