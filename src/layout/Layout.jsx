@@ -27,8 +27,8 @@ export default function Layout() {
                 <AboutSection />
                 <MenuSection />
                 <ExpertsSection />
+                <TestimonialsSection />
             
-               
         </div>
     )
 }

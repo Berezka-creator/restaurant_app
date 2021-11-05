@@ -1,3 +1,16 @@
-
+.testimonials {
+  background: url(bg2.jpg);
+  background-size: cover;
+}
+.testimonials .title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.testimonials .title .titleText, .testimonials .title p {
+  color: #fff;
+}
 
 /*# sourceMappingURL=Testimonials.css.map */
