@@ -1,0 +1,33 @@
+.about {
+  padding: 100px;
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+.aboutParagraph{
+    width: 50%;
+
+    p{
+        text-align: justify;
+        margin: 20px 40px 0 0;
+    }
+  }
+
+.aboutImg{
+    position: relative;
+    width: 50%;
+    min-height: 300px;
+
+      img{
+        position:absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+  }
+
+}

@@ -1,0 +1,28 @@
+.about {
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .aboutParagraph {
+  width: 50%;
+}
+.about .aboutParagraph p {
+  text-align: justify;
+  margin: 20px 40px 0 0;
+}
+.about .aboutImg {
+  position: relative;
+  width: 50%;
+  min-height: 300px;
+}
+.about .aboutImg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/*# sourceMappingURL=About.css.map */
