@@ -15,20 +15,20 @@ export default function Layout() {
                 <a href="#" className="logo">Food<span>.</span></a>
                 <ul className="navigation">
                     <li><a href="#banner">Home</a></li>
-                    <li><a href="#about">ABout</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#menu">Menu</a></li>
-                    <li><a href="#expert">Expert</a></li>
+                    <li><a href="#experts">Experts</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
 
             </div>
-                <BannerSection />
-                <AboutSection />
+                <BannerSection  />
+                <AboutSection/>
                 <MenuSection />
                 <ExpertsSection />
-                <TestimonialsSection />
-                <ContactSection />
+                <TestimonialsSection  />
+                <ContactSection  />
         </div>
     )
 }
