@@ -21,7 +21,6 @@ export default function Layout() {
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-
             </div>
                 <BannerSection  />
                 <AboutSection/>
@@ -29,6 +28,9 @@ export default function Layout() {
                 <ExpertsSection />
                 <TestimonialsSection  />
                 <ContactSection  />
+            <div className="copyrightText">
+                <p>Copyright 2021 <a href="#">Julia Berezina. All Right Reserved</a></p>
+            </div>
         </div>
     )
 }

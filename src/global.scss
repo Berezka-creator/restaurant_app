@@ -1,0 +1,22 @@
+$mainColor: #15023a;
+
+$width: 40rem;
+$tabletWidth: 40rem;
+
+@mixin mobile {
+    @media(max-width: 991px){
+        @content
+    }
+};
+
+@mixin desktop {
+    @media(min-width: #{$width}){
+        @content
+    }
+};
+
+@mixin tablet {
+    @media(min-width: #{$tabletWidth}){
+        @content
+    }
+};
