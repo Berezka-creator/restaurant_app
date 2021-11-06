@@ -1,4 +1,5 @@
 .testimonials {
+  padding: 50px;
   background: url(bg2.jpg);
   background-size: cover;
 }
@@ -9,8 +10,58 @@
   align-items: center;
   flex-direction: column;
 }
-.testimonials .title .titleText, .testimonials .title p {
+.testimonials .title .titleText {
   color: #fff;
+}
+.testimonials .title p {
+  color: #fff;
+}
+.testimonials .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 40px;
+}
+.testimonials .content .testItem {
+  width: 250px;
+  margin: 10px;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.testimonials .content .testItem .imgBx {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.testimonials .content .testItem .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.testimonials .content .testItem .text {
+  text-align: center;
+}
+.testimonials .content .testItem .text p {
+  color: #666;
+  font-style: italic;
+}
+.testimonials .content .testItem .text h3 {
+  margin-top: 20px;
+  color: #111;
+  font-size: 1em;
+  font-weight: 600;
+  color: #ff0157;
 }
 
 /*# sourceMappingURL=Testimonials.css.map */

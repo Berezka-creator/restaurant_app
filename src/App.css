@@ -4,7 +4,7 @@
   box-sizing: border-box;
   min-height: 1000px;
 }
-.app h2 {
+.app h2, .app h1 {
   font-family: "Berkshire Swash", cursive;
 }
 .app p {
