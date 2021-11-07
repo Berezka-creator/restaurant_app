@@ -6,6 +6,8 @@ import MenuSection from './menu/Menu'
 import ExpertsSection from './experts/Experts'
 import TestimonialsSection from './testimonials/Testimonials'
 import ContactSection from './contact/Contact'
+import { HashLink as Link} from 'react-router-hash-link'
+import { Route, Switch, Router, Redirect } from 'react-router-dom'
 
 
 export default function Layout() {
@@ -14,6 +16,7 @@ export default function Layout() {
             <div className="header">
                 <a href="#" className="logo">Food<span>.</span></a>
                 <ul className="navigation">
+                 
                     <li><a href="#banner">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#menu">Menu</a></li>
@@ -22,6 +25,7 @@ export default function Layout() {
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
+          
                 <BannerSection  />
                 <AboutSection/>
                 <MenuSection />
