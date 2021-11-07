@@ -1,39 +1,6 @@
 .layout {
   border: 1px solid black;
 }
-.layout .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 30px 80px;
-  z-index: 10000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: 0.5s;
-}
-.layout .header .logo {
-  color: white;
-  font-weight: 700;
-  font-size: 1em;
-  text-decoration: none;
-}
-.layout .header .logo span {
-  color: #ff0157;
-}
-.layout .header .navigation {
-  display: flex;
-}
-.layout .header .navigation li {
-  list-style: none;
-  margin-left: 30px;
-}
-.layout .header .navigation li a {
-  text-decoration: none;
-  font-weight: 300;
-  color: white;
-}
 .layout .copyrightText {
   padding: 8px 40px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);

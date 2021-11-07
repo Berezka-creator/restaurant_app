@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Layout.css";
+import Header from "./header/Header"
 import AboutSection from './about/About'
 import BannerSection from './banner/Banner'
 import MenuSection from './menu/Menu'
@@ -13,18 +14,8 @@ import { Route, Switch, Router, Redirect } from 'react-router-dom'
 export default function Layout() {
     return (
         <div className="layout">
-            <div className="header">
-                <a href="#" className="logo">Food<span>.</span></a>
-                <ul className="navigation">
-                 
-                    <li><a href="#banner">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#experts">Experts</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
+            <Header />
+          
           
                 <BannerSection  />
                 <AboutSection/>

@@ -6,7 +6,7 @@ import Testi3 from '../../images/testi3.jpg'
 
 export default function Testimonials() {
     return (
-        <div className="testimonials">
+        <div className="testimonials" id="testimonials">
             <div className="title">
                 <h1 className="titleText">They <span>S</span>aid About Us</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
