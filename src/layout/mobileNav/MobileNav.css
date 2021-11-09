@@ -2,7 +2,7 @@
   z-index: 900;
   position: fixed;
   top: 0;
-  right: -300px;
+  right: -500px;
   width: 80%;
   height: 100vh;
   background-color: white;
@@ -12,6 +12,11 @@
 }
 .mobileNav .sideDrawer.active {
   right: 0;
+}
+@media (min-width: 40rem) {
+  .mobileNav .sideDrawer {
+    display: none;
+  }
 }
 .mobileNav .backDrop {
   display: none;
