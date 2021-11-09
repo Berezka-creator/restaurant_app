@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Layout.css";
 import Header from "./header/Header"
 import MobileNav from './mobileNav/MobileNav'
@@ -15,11 +15,28 @@ import { Route, Switch, Router, Redirect } from 'react-router-dom'
 
 export default function Layout() {
 
+    const [headerScroll, setHeaderScroll] = useState(true)
+
     const [menuOpen, setMenuOpen] = useState(false)
+
+    const listenScrollEvent = () => {
+       window.scrollY > 10
+        ? setHeaderScroll(true)
+        : setHeaderScroll(false)
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', listenScrollEvent);
+        // return() =>
+        //     window.removeEventListener('scroll', listenScrollEvent);
+
+    }, []);
 
     return (
         <div className="layout">
-            <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+            <Header menuOpen={menuOpen} 
+                    headerScroll={headerScroll}
+                    setMenuOpen={setMenuOpen}/>
             <MobileNav menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
           
                 <BannerSection  />

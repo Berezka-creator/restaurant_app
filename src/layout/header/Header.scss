@@ -19,11 +19,21 @@
         border-bottom: 2px solid  rgba(0,0,0,0.5);
     }
 
+    &.scroll{
+        background-color: white;
+        border-bottom: 2px solid  rgba(0,0,0,0.5);
+
+    }
+
     .logo{
         color: white;
         font-weight: 700;
         font-size: 1em;
         text-decoration: none;
+
+        &.scroll{
+            color:black;
+        }
 
         span{
             color: #ff0157;
@@ -35,10 +45,7 @@
     }
 
     .toggle-button{
-        border: 1px solid red;
-      
-      
-        width: 30px;
+      width: 30px;
         height: 24px;
 
         display: flex;
@@ -76,6 +83,13 @@
                 }
 
             }
+        }
+
+        &.scroll{
+           .line{
+               background-color: black;
+           }
+    
         }
 
     
