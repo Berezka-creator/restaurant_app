@@ -13,7 +13,6 @@ export default function Testimonials() {
             </div>
 
             <div className="content">
-
                 <div className="testItem">
                     <div className="imgBx">
                         <img src={Testi1} alt="" />

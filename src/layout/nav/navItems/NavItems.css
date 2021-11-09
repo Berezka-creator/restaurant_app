@@ -1,0 +1,42 @@
+.main-nav_items {
+  display: none;
+}
+.main-nav_items li {
+  list-style: none;
+  margin-left: 30px;
+}
+.main-nav_items li a {
+  text-decoration: none;
+  font-weight: 300;
+  color: white;
+}
+@media (min-width: 40rem) {
+  .main-nav_items {
+    display: flex;
+  }
+}
+
+.mobile-nav_items {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.mobile-nav_items li {
+  list-style: none;
+}
+.mobile-nav_items li a {
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+  padding: 3%;
+}
+.mobile-nav_items li a:hover {
+  background-color: #ff1578;
+  color: white;
+}
+
+/*# sourceMappingURL=NavItems.css.map */

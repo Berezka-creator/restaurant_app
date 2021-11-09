@@ -1,13 +1,21 @@
 import React from 'react'
 import "./Header.css"
-import NavItems from './navItems/NavItems'
+import Nav from '../nav/Nav'
 
-export default function Header() {
+
+export default function Header({menuOpen, setMenuOpen}) {
     return (
-        <div className="header">
-            <a href="#" className="logo">Food<span>.</span></a>
-            <NavItems />
-         
+        <div className={"header "+(menuOpen && "active")}>
+            <a href="#" className={"logo "+(menuOpen && "active")}>Food<span>.</span></a>
+            
+            <Nav />
+
+            <div className={"toggle-button " + (menuOpen && "active")} 
+                 onClick ={() => setMenuOpen(!menuOpen)}>
+                <span className="line"></span>
+                <span className="line"></span>
+                <span className="line"></span>
+            </div>
         </div>
     )
 }

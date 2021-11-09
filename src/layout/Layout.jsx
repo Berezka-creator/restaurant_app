@@ -1,6 +1,8 @@
 import React from 'react'
+import { useState } from "react";
 import "./Layout.css";
 import Header from "./header/Header"
+import MobileNav from './mobileNav/MobileNav'
 import AboutSection from './about/About'
 import BannerSection from './banner/Banner'
 import MenuSection from './menu/Menu'
@@ -12,10 +14,13 @@ import { Route, Switch, Router, Redirect } from 'react-router-dom'
 
 
 export default function Layout() {
+
+    const [menuOpen, setMenuOpen] = useState(false)
+
     return (
         <div className="layout">
-            <Header />
-          
+            <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+            <MobileNav menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
           
                 <BannerSection  />
                 <AboutSection/>
