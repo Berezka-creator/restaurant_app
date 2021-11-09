@@ -8,7 +8,7 @@ export default function Header({menuOpen, setMenuOpen, headerScroll}) {
         <div className={"header "+(menuOpen && "active ") + (headerScroll && " scroll")}>
             <a href="#" className={"logo "+(menuOpen && "active ")  + (headerScroll && " scroll")}>Food<span>.</span></a>
             
-            <Nav />
+            <Nav headerScroll={headerScroll}/>
 
             <div className={"toggle-button " + (menuOpen && "active ")  + (headerScroll && " scroll")} 
                  onClick ={() => setMenuOpen(!menuOpen)}>

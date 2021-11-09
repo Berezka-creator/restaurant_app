@@ -15,6 +15,9 @@
     display: flex;
   }
 }
+.main-nav_items.scroll li a {
+  color: black;
+}
 
 .mobile-nav_items {
   display: flex;

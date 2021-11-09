@@ -17,6 +17,14 @@
     @include desktop{
         display: flex;
     }
+
+    &.scroll{
+        li{
+            a{
+                color:black;
+            }
+        }
+    }
 }
 
 .mobile-nav_items{
