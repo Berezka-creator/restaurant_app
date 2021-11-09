@@ -1,53 +1,7 @@
 .layout {
     border: 1px solid black;
 
-    .header{
-        position: fixed;
-        top:0;
-        left:0;
-        right:0;
-        
-        padding: 30px 80px;
-        z-index: 10000;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        transition: 0.5s;
-
-        .logo{
-            color: white;
-            font-weight: 700;
-            font-size: 1em;
-            text-decoration: none;
-
-            span{
-                color: #ff0157;
-            }
-        }
-
-        .navigation{ 
-            display: flex;
-         
-            li{
-                list-style: none;
-                margin-left: 30px;
-
-                a{
-                    text-decoration: none;
-                    font-weight: 300;
-                    color: white;
-
-                }
-                a:hover{
-                    
-                }
-            }
-        }
-
-        
-    }
-
+   
     .copyrightText {
         padding: 8px 40px;
         border-top: 1px solid rgba(0,0,0,0.1);
