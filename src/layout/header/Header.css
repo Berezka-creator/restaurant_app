@@ -4,11 +4,19 @@
   left: 0;
   right: 0;
   padding: 30px 80px;
-  z-index: 10000;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: 0.5s;
+}
+.header.active {
+  background-color: white;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+.header.scroll {
+  background-color: white;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 }
 .header .logo {
   color: white;
@@ -16,8 +24,46 @@
   font-size: 1em;
   text-decoration: none;
 }
+.header .logo.scroll {
+  color: black;
+}
 .header .logo span {
   color: #ff0157;
+}
+.header .logo.active {
+  color: black;
+}
+.header .toggle-button {
+  width: 30px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 40rem) {
+  .header .toggle-button {
+    display: none;
+  }
+}
+.header .toggle-button .line {
+  background-color: white;
+  height: 3px;
+  transform-origin: left;
+  transition: all 1s ease;
+}
+.header .toggle-button.active .line:first-child {
+  background-color: black;
+  transform: rotate(45deg);
+}
+.header .toggle-button.active .line:nth-child(2) {
+  opacity: 0;
+}
+.header .toggle-button.active .line:last-child {
+  background-color: black;
+  transform: rotate(-45deg);
+}
+.header .toggle-button.scroll .line {
+  background-color: black;
 }
 
 /*# sourceMappingURL=Header.css.map */

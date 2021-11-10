@@ -4,10 +4,30 @@
   box-sizing: border-box;
   min-height: 1000px;
 }
-.app h2, .app h1 {
+.app h1 {
+  font-size: 1em;
+  text-align: center;
+  padding: 2%;
   font-family: "Berkshire Swash", cursive;
 }
+.app h2 {
+  font-size: 2.5em;
+  text-align: center;
+  padding: 2%;
+  font-family: "Berkshire Swash", cursive;
+}
+.app section {
+  padding: 9% 5%;
+  min-height: 100vh;
+}
+@media (min-width: 40rem) {
+  .app section {
+    min-height: calc(100vh - 7rem);
+  }
+}
 .app p {
+  text-align: justify;
+  font-size: 1.2em;
   font-weight: 300;
   color: #111;
   font-family: "Poppins", sans-serif;

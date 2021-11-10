@@ -6,9 +6,9 @@ import Expert3 from '../../images/expert3.jpg'
 
 export default function Experts() {
     return (
-        <div className="experts" id="experts">
+        <section className="experts" id="experts">
             <div className="title">
-                <h2>Or Kitchen <span>E</span>xperts</h2>
+                <h2>Our Kitchen <span>E</span>xperts</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </div>
 
@@ -34,6 +34,6 @@ export default function Experts() {
                     <div className="expertText">Someone Famous</div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

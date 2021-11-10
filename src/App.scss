@@ -1,16 +1,44 @@
 //font-family: 'Berkshire Swash', cursive;
 //font-family: 'Poppins', sans-serif;
+@import "./global.scss";
+
 .app{
     margin:0;
     padding: 0;
     box-sizing: border-box;
     min-height: 1000px;
 
-    h2, h1{
-        font-family: 'Berkshire Swash', cursive;
+    h1{
+      font-size: 1em;
+      text-align: center;
+      padding: 2%;
+      font-family: 'Berkshire Swash', cursive;
     }
 
+    h2{
+      font-size: 2.5em;
+      text-align: center;
+      padding: 2%;
+      font-family: 'Berkshire Swash', cursive;
+    }
+
+    section {
+      padding: 9% 5%;
+      min-height: 100vh;
+
+      @include desktop{
+        min-height: calc(100vh - 7rem);
+
+      }
+
+
+    }
+
+  
     p{
+    
+        text-align: justify;
+        font-size: 1.2em;
         font-weight: 300;
         color:#111;
         font-family: 'Poppins', sans-serif;

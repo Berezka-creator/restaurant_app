@@ -11,7 +11,7 @@ import Pasta2 from '../../images/menu6.jpg'
 
 export default function Menu() {
     return (
-        <div className="menu" id="menu">
+        <section className="menu" id="menu">
             <div className="title">
                 <h2>Our <span>M</span>enu</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -79,6 +79,6 @@ export default function Menu() {
                 <a href="#" className='btn'>View All</a>
             </div>
 
-        </div>
+        </section>
     )
 }

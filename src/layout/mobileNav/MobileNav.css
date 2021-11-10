@@ -1,0 +1,35 @@
+.mobileNav .sideDrawer {
+  z-index: 900;
+  position: fixed;
+  top: 0;
+  right: -500px;
+  width: 80%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobileNav .sideDrawer.active {
+  right: 0;
+}
+@media (min-width: 40rem) {
+  .mobileNav .sideDrawer {
+    display: none;
+  }
+}
+.mobileNav .backDrop {
+  display: none;
+  z-index: 600;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+}
+.mobileNav .backDrop.active {
+  display: block;
+}
+
+/*# sourceMappingURL=MobileNav.css.map */

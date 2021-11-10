@@ -1,0 +1,46 @@
+@import '../../global.scss';
+
+.mobileNav{
+
+    .sideDrawer{
+
+        z-index: 900;
+        position: fixed;
+        top:0;
+        right: -500px;
+   
+        width: 80%;
+        height: 100vh;
+
+        background-color: white;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+
+        &.active{
+            right:0;
+        }
+
+        @include  desktop{
+            display: none;
+        }
+    }
+
+    .backDrop{
+        display: none;
+        z-index: 600;
+        background-color: rgba(0,0,0,0.5);
+        position: fixed;
+        top:0;
+        right:0;
+        left:0;
+        height: 100vh;
+
+        &.active{
+            display: block;
+       
+        }
+    }
+
+}

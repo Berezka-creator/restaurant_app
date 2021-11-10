@@ -1,0 +1,60 @@
+@import '../../../global.scss';
+
+.main-nav_items{ 
+    display: none;
+     
+    li{
+        list-style: none;
+        margin-left: 30px;
+
+        a{
+            text-decoration: none;
+            font-weight: 300;
+            color: white;
+        }
+    }
+
+    @include desktop{
+        display: flex;
+    }
+
+    &.scroll{
+        li{
+            a{
+                color:black;
+            }
+        }
+    }
+}
+
+.mobile-nav_items{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    
+
+    li{
+        list-style: none;
+
+        a{
+            display: block;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            color: black;
+            text-align: center;
+
+            padding: 3%;
+
+            &:hover{
+                background-color: #ff1578;
+                color: white;
+            }
+        }
+    }
+    
+}
+
+    
+
