@@ -2,11 +2,10 @@
 @import "../../global.scss";
 
 .about {
-  padding: 5%;
- 
 
+ 
   @include desktop {
-     padding: 100px;
+  
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -15,12 +14,6 @@
 
   .aboutParagraph{
     width: 100%;
-
-    h2{
-      text-align: center;
-      padding: 2%;
-      font-size: 2.5em;
-    }
     
     @include desktop {
       width: 50%;

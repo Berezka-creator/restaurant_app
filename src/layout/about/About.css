@@ -1,9 +1,5 @@
-.about {
-  padding: 5%;
-}
 @media (min-width: 40rem) {
   .about {
-    padding: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,11 +7,6 @@
 }
 .about .aboutParagraph {
   width: 100%;
-}
-.about .aboutParagraph h2 {
-  text-align: center;
-  padding: 2%;
-  font-size: 2.5em;
 }
 @media (min-width: 40rem) {
   .about .aboutParagraph {

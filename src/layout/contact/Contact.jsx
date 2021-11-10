@@ -3,10 +3,10 @@ import "./Contact.css"
 
 export default function Contact() {
     return (
-        <div className="contact" id="contact">
+        <section className="contact" id="contact">
             
             <div className="title">
-                <h1 className="titleText"><span>C</span>ontact</h1>
+                <h2 className="titleText"><span>C</span>ontact</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </div>
 
@@ -25,12 +25,8 @@ export default function Contact() {
                 <div className="inputBox">
                     <input type="submit" value="Send" />
                 </div>
-
-
             </div>
-
-
             
-        </div>
+        </section>
     )
 }

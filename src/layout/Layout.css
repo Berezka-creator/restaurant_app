@@ -1,5 +1,5 @@
-.layout {
-  border: 1px solid black;
+.layout .sections {
+  scroll-snap-type: y mandatory;
 }
 .layout .copyrightText {
   padding: 8px 40px;

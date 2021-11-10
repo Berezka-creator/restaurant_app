@@ -38,13 +38,18 @@ export default function Layout() {
                     headerScroll={headerScroll}
                     setMenuOpen={setMenuOpen}/>
             <MobileNav menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-          
+
+            <div className="sections">
                 <BannerSection  />
                 <AboutSection/>
                 <MenuSection />
                 <ExpertsSection />
                 <TestimonialsSection  />
                 <ContactSection  />
+
+            </div>
+          
+               
             <div className="copyrightText">
                 <p>Copyright 2021 <a href="#">Julia Berezina. All Right Reserved</a></p>
             </div>

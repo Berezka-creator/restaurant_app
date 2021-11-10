@@ -1,7 +1,10 @@
 .layout {
-    border: 1px solid black;
-
    
+    .sections {
+        scroll-snap-type: y mandatory;
+        
+    }
+
     .copyrightText {
         padding: 8px 40px;
         border-top: 1px solid rgba(0,0,0,0.1);

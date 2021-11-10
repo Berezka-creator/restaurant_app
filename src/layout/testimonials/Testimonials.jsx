@@ -6,9 +6,9 @@ import Testi3 from '../../images/testi3.jpg'
 
 export default function Testimonials() {
     return (
-        <div className="testimonials" id="testimonials">
+        <section className="testimonials" id="testimonials">
             <div className="title">
-                <h1 className="titleText">They <span>S</span>aid About Us</h1>
+                <h2 className="titleText">They <span>S</span>aid About Us</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </div>
 
@@ -46,6 +46,6 @@ export default function Testimonials() {
 
             </div>
             
-        </div>
+        </section>
     )
 }
