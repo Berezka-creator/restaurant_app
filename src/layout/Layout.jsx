@@ -20,6 +20,7 @@ export default function Layout() {
     const [menuOpen, setMenuOpen] = useState(false)
 
     const listenScrollEvent = () => {
+        console.log("scroll");
        window.scrollY > 10
         ? setHeaderScroll(true)
         : setHeaderScroll(false)
